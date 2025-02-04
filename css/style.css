@@ -21,7 +21,7 @@ body, ul {
 }
 
 .logo {
-    height: 50px;
+    height: 80px;
     margin-right: 50px; /* Ensures the logo has the same spacing */
 }
 
@@ -59,7 +59,7 @@ nav ul li a {
 
 /* Hero Section */
 #hero {
-    background-image: url('../assets/images/');
+    background-image: url('../assets/images/hero_janitor2.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -69,11 +69,56 @@ nav ul li a {
     justify-content: center;
     text-align: center;
     position: relative;
+    flex-direction: column; /* Stack elements vertically */
 }
 
 .hero-overlay {
-    background: rgba(0, 0, 0, 0.5); /* Optional: Dark overlay for better text visibility */
-    color: white;
-    padding: 40px;
-    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.92); /* Semi-transparent white */
+    color: #3c3c3c; /* Neutral text color */
+    padding: 40px 60px; /* Balanced padding for text */
+    max-width: 900px; /* Restrict the width for better appearance */
+    width: calc(100% - 40px); /* Responsive margin */
+    border-radius: 15px; /* Softer rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    text-align: center; /* Center text alignment */
 }
+
+.hero-overlay h1 {
+    font-size: 54px; /* Larger headline size */
+    font-family: 'Jacques Francois', serif; /* Custom font */
+    font-weight: 400; /* Normal weight */
+    line-height: 1.4; /* Better readability */
+    margin-bottom: 20px; /* Spacing between heading and text */
+    color: #3c3c3c; /* Neutral text color */
+}
+
+.hero-overlay h1 span {
+    color: #873DFE; /* Accent color for specific words */
+}
+
+.hero-overlay p {
+    font-size: 32px; /* Subheading font size */
+    font-family: 'Jacques Francois', serif; /* Match heading font */
+    line-height: 1.4; /* Adjusted for two-line spacing */
+    margin-bottom: 30px; /* Spacing before the button */
+    text-align: center; /* Center the text */
+}
+
+
+.cta-button {
+    display: inline-block;
+    background-color: #9452FF; /* Vibrant button color */
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+    padding: 20px 60px;
+    border-radius: 15px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background-color: #5a4dbd; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
