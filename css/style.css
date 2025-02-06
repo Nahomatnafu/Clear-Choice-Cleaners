@@ -299,6 +299,7 @@ nav ul li a {
 .content-box p {
     font-family: 'Jacques Francois', serif;
     font-size: 1.5rem;
+    
     color: black;
     margin-bottom: 10px;
 }
@@ -385,10 +386,13 @@ nav ul li a {
 
 .snow-shoveling .content-box p {
     font-family: 'Jacques Francois', serif;
+    font-weight: 550;
     text-align: left;
     font-size: 1.5rem; 
     color: black;
-
+}
+.snow-shoveling .content-box span {
+    color: #9452FF;
 }
 
 .snow-shoveling .content-icon {
