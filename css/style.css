@@ -1,5 +1,5 @@
 /* General Reset */
-body, ul {
+body, ul, p, h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 0;
 }
@@ -122,3 +122,191 @@ nav ul li a {
     transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
+/* Introduction Section */
+#seasonal-services {
+    position: relative;
+    width: 100%;
+    height: 140vh; /* Match the viewport height */
+    background-image: url('../assets/images/soap_trial.jpg');
+    background-size: cover; /* Ensures the image fills the section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.super-cleaner {
+    margin-right: 900px;
+}
+
+.introduction {
+    width: 40%; 
+    max-width: 754px; 
+    height: auto; 
+    aspect-ratio: 754 / 463; /* Maintain the Figma aspect ratio */
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 6px 4px 10px rgba(0, 0, 0, 0.48); /* Subtle shadow */
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center content */
+    align-items: center; /* Center content horizontally */
+    position: absolute; /* Position it relative to the parent */
+    right: 10%; /* Position it on the right side of the screen */
+    top: 50%; /* Vertically center it */
+    transform: translateY(-50%); /* Adjust for perfect centering */
+}
+
+/* Heading Text */
+.introduction h2 {
+    font-family: 'Jacques Francois', serif; /* Set the correct font */
+    font-size: 2.25rem; /* 36px converted to rem (36/16) */
+    color: #421C7F; /* Dark purple color */
+    text-align: left; /* Center align */
+    line-height: 1.4; /* Ensure proper line spacing */
+}
+
+/* Paragraph Text */
+.introduction p {
+    font-family: 'Jacques Francois', serif;
+    font-size: 1.625rem;
+    color: black; 
+    text-align: left; 
+    line-height: 1.6; 
+    margin-bottom: 20px;
+    white-space: pre-line; /* Ensure line breaks are respected */
+}
+
+/* Button Styles */
+.cta-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; /* Space between button and spray icon */
+}
+
+.spray-sticker {
+    max-width: 85px; /* Adjust size if needed */
+    height: auto;
+}
+
+.contact-button {
+    width: 240px; 
+    height: 68px; 
+    background-color: #9452FF; 
+    color: white; 
+    font-family: 'Inter', sans-serif; 
+    font-size: 1.25rem;
+    font-weight: 200; 
+    border: none; 
+    border-radius: 15px; 
+    text-align: center; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effects */
+}
+
+/* Button Hover Effect */
+.contact-button:hover {
+    background-color: #5a4dbd; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge */
+}
+
+/* Services Section */
+/* Window Cleaning Section */
+/* Header Box (Black) */
+#window-cleaning .header-box {
+    background-color: black; /* Black background for the header */
+    padding: 25px 0;
+    text-align: center;
+    position: relative;
+    z-index: 2; /* Ensure it appears above other sections */
+}
+
+#window-cleaning .header-box h1 {
+    font-family: 'Jacques Francois', serif;
+    font-size: 2.5rem; /* 40px converted to rem */
+    font-weight: lighter;
+    color: white;
+    margin-bottom: 10px;
+}
+
+#window-cleaning .header-box p {
+    font-family: 'Jacques Francois', serif;
+    font-size: 2rem; /* 20px converted to rem */
+    color: white;
+    margin: 0;
+}
+/* Services Section (Background and Content) */
+#window-cleaning .background-section {
+    position: relative;
+    width: 100%;
+    height: 1290px;
+    background-color: #9452FF;
+    background-image: url('../assets/images/texture_05.png');
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px; /* Space between content rows */
+}
+
+#window-cleaning .content-row {
+    display: flex;
+    align-items: center;
+    gap: 40px; /* Space between the image and the text box */
+    width: 100%;
+    max-width: 1200px;
+}
+
+#window-cleaning .content-row.reverse {
+    flex-direction: row-reverse; /* Reverse the order for the second row */
+}
+
+.content-image {
+    max-width: 550px; /* Adjust as needed */
+    height: auto;
+    flex-shrink: 0;
+}
+
+.content-box {
+    width: 870px;
+    height: 300px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.content-box h2 {
+    font-family: 'Jacques Francois', serif;
+    font-size: 1.6rem; /* 30px converted to rem */
+    color: #8133FF;
+    margin-bottom: 10px;
+}
+
+.content-box p {
+    font-family: 'Jacques Francois', serif;
+    font-size: 1.5rem; /* 24px converted to rem */
+    color: black;
+    margin-bottom: 20px;
+}
+
+.content-icon {
+    max-width: 100px;
+    height: auto;
+}
