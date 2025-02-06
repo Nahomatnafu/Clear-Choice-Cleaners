@@ -257,7 +257,7 @@ nav ul li a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 60px; /* Space between content rows */
+    gap: 90px; /* Space between content rows */
 }
 
 #window-cleaning .content-row {
@@ -268,12 +268,9 @@ nav ul li a {
     max-width: 1200px;
 }
 
-#window-cleaning .content-row.reverse {
-    flex-direction: row-reverse; /* Reverse the order for the second row */
-}
 
 .content-image {
-    max-width: 550px; /* Adjust as needed */
+    max-width: 550px; 
     height: auto;
     flex-shrink: 0;
 }
@@ -294,19 +291,107 @@ nav ul li a {
 
 .content-box h2 {
     font-family: 'Jacques Francois', serif;
-    font-size: 1.6rem; /* 30px converted to rem */
+    font-size: 1.6rem;
     color: #8133FF;
     margin-bottom: 10px;
 }
 
 .content-box p {
     font-family: 'Jacques Francois', serif;
-    font-size: 1.5rem; /* 24px converted to rem */
+    font-size: 1.5rem;
     color: black;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .content-icon {
+    max-width: 100px;
+    height: auto;
+}
+
+/* Snow Shoveling Section */
+/* Header Box for Snow Shoveling */
+.snow-shoveling .header-box {
+    background-color: black;
+    padding: 25px 0;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.snow-shoveling .header-box h1 {
+    font-family: 'Jacques Francois', serif;
+    font-size: 2.5rem; 
+    font-weight: lighter;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.snow-shoveling .header-box p {
+    font-family: 'Jacques Francois', serif;
+    font-size: 2rem; 
+    color: white;
+}
+
+/* Background Section */
+.snow-shoveling .background-section {
+    position: relative;
+    width: 100%;
+    height: 1290px; /* Same height as the Window Cleaning section */
+    background-color:white;
+    background-image: url('../assets/images/texture_05.png'); 
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 90px; /* Space between content rows */
+}
+
+/* Content Rows */
+.snow-shoveling .content-row {
+    display: flex;
+    align-items: center;
+    gap: 40px; /* Space between image and text box */
+    width: 100%;
+    max-width: 1200px;
+}
+
+.snow-shoveling .content-row.reverse {
+    flex-direction: row-reverse; /* Reverse layout for the second row */
+}
+
+/* Content Image */
+.snow-shoveling .content-image {
+    max-width: 800px; /* Adjust size */
+    height: auto;
+    flex-shrink: 0;
+}
+
+/* Content Box */
+.snow-shoveling .content-box {
+    width: 900px;
+    height: 330px; /* Adjust dynamically based on text */
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.snow-shoveling .content-box p {
+    font-family: 'Jacques Francois', serif;
+    text-align: left;
+    font-size: 1.5rem; 
+    color: black;
+
+}
+
+.snow-shoveling .content-icon {
     max-width: 100px;
     height: auto;
 }
