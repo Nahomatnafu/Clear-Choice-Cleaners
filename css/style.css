@@ -399,3 +399,33 @@ nav ul li a {
     max-width: 100px;
     height: auto;
 }
+
+/* Map Section */
+#service-map {
+    width: 100%;
+    position: relative;
+}
+
+/* Header Box */
+#service-map .header-box {
+    background-color: black;
+    padding: 25px 0;
+    text-align: center;
+}
+
+#service-map .header-box h1 {
+    font-family: 'Jacques Francois', serif;
+    font-size: 2.5rem; /* 40px converted to rem */
+    font-weight: lighter;
+    color: white;
+    margin: 0; /* Remove default margin */
+}
+
+/* Map Container */
+#service-map .map-container iframe {
+    display: block;
+    width: 100%; /* Full width map */
+    height: 800px; /* Increased height for a taller map */
+    border: 0;
+}
+
