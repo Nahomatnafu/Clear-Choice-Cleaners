@@ -536,3 +536,100 @@ nav ul li a {
     transform: scale(1.05); 
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
 }
+
+
+/* Testimonials Section */
+.testimonials-section {
+    text-align: center;
+    padding: 100px 0;
+    background: #f9f9f9;
+}
+
+/* Header Box */
+.header-box h1 {
+    font-family: 'Jacques Francois', serif;
+    font-size: 2.5rem;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.header-box p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Testimonial Slider Container */
+.testimonial-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Testimonial Items */
+.testimonial-slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.testimonial {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 50px; /* Increased from 30px to 50px */
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Slightly deeper shadow */
+    transition: transform 0.3s ease-in-out;
+}
+
+.testimonial img {
+    width: 120px; /* Increased from 100px */
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.testimonial p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    font-style: italic;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+
+.testimonial h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+}
+
+/* Navigation Buttons */
+.prev-btn,
+.next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #9452FF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: background 0.3s ease;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+    background: #5a4dbd;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
