@@ -429,3 +429,110 @@ nav ul li a {
     border: 0;
 }
 
+/* Call Us Section */
+#call-us {
+    position: relative;
+    width: 100%;
+    background-color: black; /* Black background for the header box */
+    color: white;
+}
+
+/* Header Box */
+#call-us .header-box {
+    background-color: black;
+    padding: 25px 0;
+    text-align: center;
+}
+
+#call-us .header-box h1 {
+    font-family: 'Jacques Francois', serif;
+    font-size: 2.5rem; /* 40px */
+    font-weight: lighter;
+    color: white;
+    margin: 0;
+}
+
+/* Background Section */
+#call-us .background-section {
+    position: relative;
+    background-image: url('../assets/images/lady_cleaning.png'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    height: 830px; /* Matches the white overlay */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* White Overlay */
+#call-us .white-overlay {
+    width: 850px;
+    height: 550px;
+    background-color: rgba(255, 255, 255, 0.92); /* Slightly transparent white */
+    border-radius: 15px; /* Rounded corners */
+    padding: 70px; /* Inner padding for content */
+    text-align: center; /* Center content */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Overlay Header */
+#call-us .white-overlay h2 {
+    font-family: 'Jacques Francois', serif;
+    font-size: 2.5rem; /* 40px */
+    color: black;
+    margin-bottom: 30px;
+    line-height: 1.4;
+}
+
+#call-us .white-overlay h2 .highlight {
+    color: #8133FF; /* Purple highlight color */
+}
+
+/* Paragraph Text */
+#call-us .white-overlay p {
+    font-family: 'Jacques Francois', serif;
+    font-size: 2rem; 
+    color: black;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+#call-us .white-overlay p .highlight {
+    color: #8133FF; /* Purple highlight color */
+}
+
+/* Call Us Text */
+#call-us .call-us-text {
+    font-size: 1.5rem; /* 24px */
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* OR Text */
+#call-us .or-text {
+    font-size: 1.25rem; /* 20px */
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+/* Book Now Button */
+#call-us .book-now {
+    width: 250px;
+    height: 80px;
+    background-color: #9452FF; /* Purple button color */
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem; 
+    font-weight: lighter;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#call-us .book-now:hover {
+    background-color: #5a4dbd; 
+    transform: scale(1.05); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
