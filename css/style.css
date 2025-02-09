@@ -632,3 +632,91 @@ nav ul li a {
 .next-btn {
     right: 15px;
 }
+
+
+/* Footer Section */
+.footer {
+    background-color: #9452FF;
+    padding: 50px 0;
+    color: white;
+    text-align: center;
+}
+
+/* Footer Container */
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+/* Footer Title */
+.footer-title {
+    font-family: 'Jacques Francois', serif;
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+/* Footer Content */
+.footer-content {
+    display: flex;
+    justify-content: center;
+    gap: 180px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+/* Footer Links */
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer-link {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #dedede;
+}
+
+/* Call and Social Media Section */
+.footer-highlight {
+    color: white;
+    font-weight: bold;
+}
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons a {
+    font-size: 36px;
+    color: white;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #dedede;
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+    background-color: black;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 18px;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-weight: lighter;
+    margin: 0;
+}
