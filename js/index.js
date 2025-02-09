@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const nextBtn = document.querySelector(".next-btn");
     let currentIndex = 0;
     const totalTestimonials = testimonials.length;
-    const slideSpeed = 3000; // Auto-slide every 3s
+    const slideSpeed = 5000; // Auto-slide every 5s
 
     function showTestimonial(index) {
         slider.style.transform = `translateX(-${index * 100}%)`;
