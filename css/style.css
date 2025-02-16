@@ -1,7 +1,25 @@
+html {
+    scroll-behavior: smooth;
+}
 /* General Reset */
 body, ul, p, h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 0;
+}
+/* Make Header Sticky */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #6A7179; /* Ensure background color */
+    z-index: 1000; /* Ensure it stays above other elements */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+}
+
+/* Add padding to body to prevent content from hiding under the header */
+body {
+    padding-top: 80px; /* Adjust based on header height */
 }
 
 /* Header Section */
@@ -193,6 +211,16 @@ nav ul li a {
     height: auto;
 }
 
+/* Spray Icon Hover Effect */
+.spray-sticker {
+    transition: transform 0.3s ease-in-out;
+}
+
+.spray-sticker:hover {
+    transform: scale(1.2); /* Enlarges the spray icon by 20% */
+}
+
+
 .contact-button {
     width: 240px; 
     height: 68px; 
@@ -308,6 +336,13 @@ nav ul li a {
     max-width: 100px;
     height: auto;
 }
+.content-icon {
+    transition: transform 0.3s ease-in-out;
+}
+
+.content-icon:hover {
+    transform: scale(1.2); /* Makes the icon 20% larger */
+}
 
 /* Snow Shoveling Section */
 /* Header Box for Snow Shoveling */
@@ -400,6 +435,85 @@ nav ul li a {
     height: auto;
 }
 
+
+/* About Us Section */
+.about-section .header-box {
+    background-color: black;
+    padding: 25px 0;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.about-section .header-box h1 {
+    font-family: 'Jacques Francois', serif;
+    font-size: 2.5rem; 
+    font-weight: lighter;
+    color: white; 
+    margin: 0;
+}
+
+/* About Section */
+.about-section {
+    text-align: center;
+    padding-bottom: 120px;
+}
+.about-container {
+    padding-top: 50px;
+}
+/* Purple Overlay */
+.about-overlay {
+    background-color: rgba(148, 82, 255, 0.55); /* 55% opacity */
+    padding: 40px;
+    width: 80%;
+    max-width: 1000px;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+/* About Text */
+.about-overlay p {
+    font-family: 'Jacques Francois', serif;
+    font-size: 28px;
+    color: black;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Contact Text */
+.about-contact {
+    font-family: 'Jacques Francois', serif;
+    font-size: 28px;
+    color: black;
+    margin-top: 30px;
+}
+
+/* Highlighted Phone Number */
+.phone-number {
+    color: #873DFE;
+    font-weight: bold;
+}
+
+/* Book Now Button */
+.book-now {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    color: white;
+    background-color: #9452FF;
+    padding: 20px 40px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Button Hover */
+.book-now:hover {
+    background-color: #7A3DD6;
+    transform: scale(1.05);
+}
+
 /* Map Section */
 #service-map {
     width: 100%;
@@ -422,12 +536,22 @@ nav ul li a {
 }
 
 /* Map Container */
-#service-map .map-container iframe {
-    display: block;
-    width: 100%; /* Full width map */
-    height: 800px; /* Increased height for a taller map */
-    border: 0;
+
+#service-map .map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
 }
+
+/* Ensure iframe is centered and has a max-width */
+#service-map iframe {
+    max-width: 900px; /* Adjust as needed */
+    width: 80%; /* Reduced width */
+    height: 750px; /* Smaller height */
+    border-radius: 10px; /* Smooth rounded corners */
+}
+
 
 /* Call Us Section */
 #call-us {
@@ -729,4 +853,129 @@ nav ul li a {
     font-family: 'Playfair Display', serif;
     font-weight: lighter;
     margin: 0;
+}
+
+/* Responsive Design */
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .quote-button {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Header Adjustments */
+    .container {
+        padding: 10px;
+    }
+
+    nav ul {
+        display: none; /* Hide menu for mobile */
+    }
+
+    .logo {
+        height: 60px; /* Reduce logo size */
+    }
+
+    /* Hero Section */
+    #hero h1 {
+        font-size: 32px;
+    }
+
+    .cta-button {
+        font-size: 16px;
+        padding: 12px 30px;
+    }
+
+    /* Introduction Section */
+    .introduction {
+        width: 90%;
+        padding: 20px;
+    }
+
+    /* Services Section */
+    .content-row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content-box {
+        width: 100%;
+    }
+
+    .content-image {
+        max-width: 100%;
+    }
+
+    /* About Section */
+    .about-overlay {
+        width: 90%;
+    }
+
+    /* Testimonials Section */
+    .testimonial {
+        padding: 20px;
+    }
+
+    .testimonial img {
+        width: 80px;
+        height: 80px;
+    }
+
+    /* Map Section */
+    #service-map iframe {
+        width: 90%;
+        height: 400px;
+    }
+
+    /* Footer */
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .social-icons a {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Header */
+    .logo {
+        height: 50px;
+    }
+
+    /* Hero Section */
+    #hero h1 {
+        font-size: 24px;
+    }
+
+    /* CTA Buttons */
+    .cta-button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    /* Contact Us Section */
+    .white-overlay {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .book-now {
+        font-size: 16px;
+        padding: 10px 25px;
+    }
 }
