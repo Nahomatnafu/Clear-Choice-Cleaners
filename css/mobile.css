@@ -1,0 +1,104 @@
+/* Mobile Header */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #6A7179;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Centered Logo */
+.logo-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    height: 50px;
+}
+
+/* Hamburger Menu Positioned Right */
+.hamburger {
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Mobile Navigation */
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 250px;
+    height: 100%;
+    background-color: #6A7179;
+    box-shadow: -2px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease-in-out;
+    padding: 60px 20px;
+}
+
+.mobile-nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.mobile-nav ul li {
+    margin: 20px 0;
+}
+
+.mobile-nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    display: block;
+}
+
+.mobile-nav .close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Hero Section */
+#hero {
+    background-image: url('../assets/images/hero_janitor2.png'); /* Set background via CSS */
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.hero-overlay h1 {
+    font-size: 28px;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.hero-overlay p {
+    font-size: 16px;
+    text-align: center;
+}
+
+.cta-button {
+    font-size: 16px;
+    padding: 12px 24px;
+    background-color: #9452FF;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+}

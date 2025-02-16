@@ -14,6 +14,7 @@
 
 
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
     <!-- Header Section -->
@@ -23,7 +24,9 @@
                 <a href="#hero">
                     <img src="assets/images/ccc_logo.jpg" alt="Clear Choice Cleaning Logo" class="logo">
                 </a>
-                <nav>
+                
+                <!-- Desktop Navigation -->
+                <nav class="desktop-nav">
                     <ul>
                         <li><a href="#hero">Home</a></li>
                         <li><a href="#window-cleaning">Services</a></li>
@@ -31,11 +34,27 @@
                         <li><a href="#testimonials">Reviews</a></li>
                     </ul>
                 </nav>
-                <a href="#calendly" class="quote-button">Get Free Quote</a>
+
+                <!-- Desktop Only: Get Free Quote Button -->
+                <a href="#calendly" class="quote-button desktop-only">Get Free Quote</a>
+
+
+                <!-- Hamburger Menu Icon (For Mobile) -->
+                <div class="hamburger" onclick="toggleMobileNav()">☰</div>
             </div>
         </div>
     </header>
-    
+
+    <!-- Mobile Navigation Menu -->
+    <nav class="mobile-nav" id="mobileNav">
+        <span class="close-btn" onclick="toggleMobileNav()">×</span>
+        <ul>
+            <li><a href="#hero" onclick="toggleMobileNav()">Home</a></li>
+            <li><a href="#window-cleaning" onclick="toggleMobileNav()">Services</a></li>
+            <li><a href="#about" onclick="toggleMobileNav()">About Us</a></li>
+            <li><a href="#testimonials" onclick="toggleMobileNav()">Reviews</a></li>
+        </ul>
+    </nav>
 
     <!-- Hero Section -->
     <main>
